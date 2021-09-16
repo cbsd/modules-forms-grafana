@@ -1,0 +1,9 @@
+  '#datasource_name#':
+    ensure: present
+    grafana_url: "%{hiera('profiles::services::grafana::url')}"
+    grafana_user: admin
+    grafana_password: "%{hiera('profiles::services::grafana::password::admin')}"
+    type: #datasource_type#
+    url: #datasource_url#
+    access_mode: #datasource_access_mode#
+    is_default: #datasource_is_default#

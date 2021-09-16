@@ -1,0 +1,10 @@
+
+ this module requires the cbsdpuppet1 jail, create if it doesn't exist
+ via: cbsd jconstruct-tui -> profile -> cbsdpuppet
+
+ please use:
+   cbsd forms module=grafana jname=YOUR_JAIL [inter=0]
+
+ The main parameters that you can use via ~cbsd/etc/forms_env.conf or env(1):
+
+ % cbsd forms module=grafana vars

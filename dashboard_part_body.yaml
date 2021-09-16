@@ -1,0 +1,6 @@
+  '#dashboard_name#':
+    ensure: present
+    grafana_url: "%{hiera('profiles::services::grafana::url')}"
+    grafana_user: admin
+    grafana_password: "%{hiera('profiles::services::grafana::password::admin')}"
+    template: #dashboard_template#
